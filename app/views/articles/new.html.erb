@@ -1,0 +1,22 @@
+<div class="">
+  <%= form_with scope: :article, url: articles_path, local: true do |form| %>
+
+    <p>
+      <%= form.label :title %><br>
+      <%= form.text_field :title %>
+    </p>
+
+    <p>
+      <%= form.label :description %><br>
+      <%= form.text_field :description %>
+    </p>
+
+    <p>
+      <%= form.label :text %><br>
+      <%= form.rich_text_area :text %>
+    </p>
+
+    <p><%= form.submit %></p>
+
+  <% end %>
+</div>
